@@ -75,7 +75,7 @@
     };
 
     function checkwinner() {
-        //check tie
+        //check if tie
         let tie = 0;
         for (sq of sqlist) {
             if (sq.classList.contains("neutral") != true) {
@@ -87,7 +87,7 @@
             return "tie"
         };
 
-        // check winner
+        // check the winner
         for (seq in winseq) {
             let count = 0;
             let seqid = Array.from(winseq[seq]);
